@@ -1,0 +1,38 @@
+@use '../utils/mixins' as *;
+
+.btn--primary {
+    background-color: #e2a572;
+    padding: 15px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    @include action-btn-transition;
+
+    &:hover {
+        background-color: #b27442;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+.btn--more {
+    cursor: pointer;
+    width: 350px;
+    @include action-btn-transition;
+    font-size: 16px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    display: flex
+;
+    &:hover {
+        transform: scale(1.1);
+        background-color: #b27442;
+        font-size: 18px;
+        padding: 15px 30px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+}

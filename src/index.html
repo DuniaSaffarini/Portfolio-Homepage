@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dunia Saffarini's Web Development Portfolio</title>
+  <link rel="stylesheet" href="../dist/main.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="header">
+    <img class="header__logo" src="../src/img/logo.png" alt="Logo of Dunia Saffarini's Web Development Portfolio" />
+    <div>
+      <div class="header__burger-menu" aria-label="Menu" tabindex="0" role="button">
+        <div class="header__burger-line"></div>
+        <div class="header__burger-line"></div>
+        <div class="header__burger-line"></div>
+      </div>
+      <div>
+        <div class="header__close-icon" tabindex="0" role="button" aria-label="Close Menu">
+          <span>&times;</span>
+        </div>
+        <nav>
+          <ul class="header__nav-menu">
+            <li><a class="header__nav-link" href="#">Skills</a></li>
+            <li><a class="header__nav-link" href="#">Projects</a></li>
+            <li><a class="header__nav-link" href="#">Resume</a></li>
+            <li><a class="header__nav-link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main id="main-content" class="home-page-container">
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__image-wrapper">
+          <img src="../src/img/avater.jpg" alt="Personal image of Dunia Saffarini" />
+        </div>
+        <div class="hero__intro">
+          <div class="hero__description">
+            <h1 class="hero__title">Dunia Saffarini's Web Development Portfolio</h1>
+            <p>Short blurb about the developer, lorem ipsum, etc.</p>
+          </div>
+          <div class="hero__actions">
+            <button class="btn--primary" aria-label="Go to Kochi page">
+              <strong>GO KOCHI NOW!</strong>
+            </button>
+            <button class="btn--primary" aria-label="Go to Kochi page">
+              <strong>GO KOCHI NOW!</strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <h2>Latest Projects</h2>
+      <div class="details__card-container">
+        <article class="card">
+          <p class="card__title">Project 1</p>
+          <img src="../src/img/card-image.jpg" alt="Screenshot of Project 1" class="card__image">
+          <p class="card__description">This is a short description of Project 1.</p>
+        </article>
+        <article class="card">
+          <p class="card__title">Project 2</p>
+          <img src="../src/img/card-image.jpg" alt="Screenshot of Project 2" class="card__image">
+          <p class="card__description">This is a short description of Project 2.</p>
+        </article>
+        <article class="card">
+          <p class="card__title">Project 3</p>
+          <img src="../src/img/card-image.jpg" alt="Screenshot of Project 3" class="card__image">
+          <p class="card__description">This is a short description of Project 3.</p>
+        </article>
+      </div>
+
+      <div class="details__actions">
+        <a href="/projects" class="btn--primary btn--more" aria-label="View all projects">
+          <strong>VIEW ALL PROJECTS</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright Kochi Inc. 2024. Developed by Eric Kochavolysky</p>
+  </footer>
+
+  <script src="./script/header.js"></script>
+</body>
+
+</html>

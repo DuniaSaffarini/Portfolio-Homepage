@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  scroll-snap-type: y mandatory;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+h3 {
+  font-size: .5rem;
+}
+
+:focus {
+  outline: 2px solid #00bcd4;
+  outline-offset: 3px;
+}
+
+:focus-visible {
+  outline: 2px dashed #ff9800;
+}
+
+
+@media (max-width: 768px) {
+  .details h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .details h1 {
+    font-size: 1.2rem;
+  }
+
+}

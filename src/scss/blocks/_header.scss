@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  transition: padding 0.3s ease, height 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &.shrink {
+    padding: 10px 20px;
+    height: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2)
+  }
+}
+
+
+
+
+.header.shrink .header__logo {
+  width: 30px;
+  height: 30px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--white);
+  list-style-type: none;
+  background-color: var(--primary-color);
+}
+
+.header__nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 40px;
+  height: 40px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.header__close-icon {
+  right: 70px;
+  z-index: 2;
+  top: 44px;
+  display: none;
+  font-size: 30px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header__nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .header__burger-menu {
+    display: flex;
+  }
+
+  .header__nav-menu.active {
+    display: flex;
+  }
+
+  .header__close-icon.active {
+    right: 70px;
+    z-index: 2;
+    top: 44px;
+    display: block;
+  }
+
+  .header__burger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .header__burger-line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+  }
+
+  .header__burger-menu.active {
+    display: none;
+  }
+
+
+  .header__close-icon-icon span {
+    display: block;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+  }
+}
